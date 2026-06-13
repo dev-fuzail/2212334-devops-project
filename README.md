@@ -92,4 +92,19 @@ pytest app/tests/ -v
 
 ---
 
+# API Responses:
+Health Response: (/health)
+{"status":"ok","db":"connected","student":"BSCS-2212334"}
+
+Retrieve all students: (/students)
+[{"reg_no":"bcsbs2212334","name":"Muhammad Fuzail Ansari","semester":8,"section":"A","id":1},{"reg_no":"bcsbs1234567","name":"Test User","semester":8,"section":"B","id":2}]
+
+Fetch specific student: (/students/bcsbs2212334)
+{"reg_no":"bcsbs2212334","name":"Muhammad Fuzail Ansari","semester":8,"section":"A","id":1}
+
+ADD Student:
+curl -X POST http://18.226.15.146:8000/students   -H "Content-Type: application/json"   -d '{"reg_no": "bcsbs2212334", "name": "Muhammad Fuzail Ansari", "semester": 8, "section": "A"}'
+
+
+
 *DevOps Fundamentals — Instructor: Afaq Ahmed*
