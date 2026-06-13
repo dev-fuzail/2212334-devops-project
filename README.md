@@ -2,7 +2,7 @@
 
 > **Student:** BSCS-2212334
 > **Course:** DevOps Fundamentals
-> **Live URL:** http://YOUR_EC2_IP:8000
+> **Live URL:** http://18.190.154.150:8000
 
 ---
 
